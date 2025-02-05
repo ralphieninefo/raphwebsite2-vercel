@@ -28,15 +28,15 @@ export default function Home() {
           </Canvas>
         </div>
 
-        {/* Other content like navigation */}
+        {/* Navigation Links */}
         <nav className={styles.nav}>
-          <Link href="/about-me">
+          <Link href="/about-me" legacyBehavior>
             <a className={styles.link}>About Me</a>
           </Link>
-          <Link href="/why-join-vercel">
-            <a className={styles.link}>Why join Vercel?</a>
+          <Link href="/projects" legacyBehavior>
+            <a className={styles.link}>Projects</a>
           </Link>
-          <Link href="/my-tech-certs">
+          <Link href="/my-tech-certs" legacyBehavior>
             <a className={styles.link}>My Tech Certs</a>
           </Link>
         </nav>
