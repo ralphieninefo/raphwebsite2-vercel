@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        {/* 3D text container using the new style */}
+        {/* 3D text container */}
         <div className={styles.canvasContainer}>
           <Canvas>
             <ambientLight intensity={0.5} />
@@ -39,8 +39,12 @@ export default function Home() {
           <Link href="/my-tech-certs" legacyBehavior>
             <a className={styles.link}>My Tech Certs</a>
           </Link>
+          <Link href="https://your-space-name.nyc3.digitaloceanspaces.com/resume.pdf" legacyBehavior>
+            <a className={styles.link} target="_blank" rel="noopener noreferrer">My Resume</a>
+          </Link>
         </nav>
       </main>
     </div>
   );
 }
+
