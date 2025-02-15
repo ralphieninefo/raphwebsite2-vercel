@@ -39,7 +39,7 @@ export default function Home() {
           <Link href="/my-tech-certs" legacyBehavior>
             <a className={styles.link}>My Tech Certs</a>
           </Link>
-          <Link href="https://raphresume.sfo3.digitaloceanspaces.com/resume.pdf" legacyBehavior>
+          <Link href="https://raphresume.sfo3.digitaloceanspaces.com/Raphael_Sirvent_Resume.pdf" legacyBehavior>
             <a className={styles.link} target="_blank" rel="noopener noreferrer">My Resume</a>
           </Link>
         </nav>
