@@ -7,7 +7,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Hi! I'm Raphaël :)</title>
-        <meta name="description" content="Hire Raphaël Sirvent" />
+        <meta name="description" content="Raphaël Sirvent's Personal Site" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -26,8 +26,31 @@ export default function Home() {
           <Link href="/my-tech-certs" legacyBehavior>
             <a className={styles.link}>My Tech Certs</a>
           </Link>
-          <Link href="https://raphresume.sfo3.digitaloceanspaces.com/Raphael_Sirvent_Resume.pdf" legacyBehavior>
-            <a className={styles.link} target="_blank" rel="noopener noreferrer">My Resume</a>
+          <Link href="https://www.linkedin.com/in/raphael-sirvent/" legacyBehavior>
+            <a className={styles.link} target="_blank" rel="noopener noreferrer">My LinkedIn</a>
+          </Link>
+          {/* Updated Resume Link with Error Handling */}
+          <Link href="/Raphael_Sirvent_Resume.pdf" legacyBehavior>
+            <a 
+              className={styles.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              onClick={(e) => {
+                fetch("/Raphael_Sirvent_Resume.pdf")
+                  .then((res) => {
+                    if (!res.ok) {
+                      alert("Resume file not found. Please check back later!");
+                      e.preventDefault();
+                    }
+                  })
+                  .catch(() => {
+                    alert("Error loading the resume file.");
+                    e.preventDefault();
+                  });
+              }}
+            >
+              My Resume
+            </a>
           </Link>
         </nav>
       </main>
