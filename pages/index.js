@@ -31,4 +31,6 @@ export default function Home() {
           </Link>
         </nav>
       </main>
-    </d
+    </div>
+  );
+}
