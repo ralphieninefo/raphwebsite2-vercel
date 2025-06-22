@@ -24,10 +24,10 @@ export default function Home() {
             <a className={styles.link}>Projects</a>
           </Link>
           <Link href="/my-tech-certs" legacyBehavior>
-            <a className={styles.link}>My Tech Certs</a>
+            <a className={styles.link}>Tech Certs</a>
           </Link>
           <Link href="https://www.linkedin.com/in/raphael-sirvent/" legacyBehavior>
-            <a className={styles.link} target="_blank" rel="noopener noreferrer">My LinkedIn</a>
+            <a className={styles.link} target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </Link>
           {/* Updated Resume Link with Error Handling */}
           <Link href="/Raphael_Sirvent_Resume.pdf" legacyBehavior>
@@ -49,7 +49,7 @@ export default function Home() {
                   });
               }}
             >
-              My Resume
+              Resume
             </a>
           </Link>
         </nav>
