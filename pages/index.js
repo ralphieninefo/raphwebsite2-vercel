@@ -20,19 +20,12 @@ export default function Home() {
           <Link href="/about-me" legacyBehavior>
             <a className={styles.link}>About Me</a>
           </Link>
-          <Link href="/projects" legacyBehavior>
-            <a className={styles.link}>Projects</a>
-          </Link>
           <Link href="/my-tech-certs" legacyBehavior>
             <a className={styles.link}>Tech Certs</a>
-          </Link>
-          <Link href="/fluid_demo" legacyBehavior>
-            <a className={styles.link}>Edge vs Serverless</a>
           </Link>
           <Link href="https://www.linkedin.com/in/raphael-sirvent/" legacyBehavior>
             <a className={styles.link} target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </Link>
-          {/* Updated Resume Link with Error Handling */}
           <Link href="/resume.pdf" legacyBehavior>
             <a 
               className={styles.link} 
@@ -54,6 +47,9 @@ export default function Home() {
             >
               Resume
             </a>
+          </Link>
+          <Link href="/edge_serverless_demo" legacyBehavior>
+            <a className={styles.link}>Edge vs Serverless</a>
           </Link>
         </nav>
       </main>
