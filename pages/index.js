@@ -1,8 +1,22 @@
+import { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const [message, setMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  async function callFunction(type) {
+    setLoading(true);
+    const start = performance.now();
+    const res = await fetch(`/api/hello${type === 'edge' ? '-edge' : ''}`);
+    const data = await res.json();
+    const end = performance.now();
+    setMessage(`${data.message} (⏱ ${Math.round(end - start)} ms)`);
+    setLoading(false);
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -53,6 +67,23 @@ export default function Home() {
             </a>
           </Link>
         </nav>
+
+        {/* Fluid Compute Demo */}
+        <section style={{ marginTop: '3rem', textAlign: 'center' }}>
+          <h2>Fluid Compute Demo</h2>
+          <p>Click a button below to call either the Serverless or Edge function.</p>
+          <div style={{ marginTop: '1rem' }}>
+            <button onClick={() => callFunction('serverless')} style={{ marginRight: '1rem' }}>
+              Call Serverless
+            </button>
+            <button onClick={() => callFunction('edge')}>
+              Call Edge
+            </button>
+          </div>
+          <div style={{ marginTop: '1rem', fontWeight: 'bold' }}>
+            {loading ? 'Loading...' : message}
+          </div>
+        </section>
       </main>
     </div>
   );
