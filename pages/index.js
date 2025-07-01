@@ -48,7 +48,7 @@ export default function Home() {
               Resume
             </a>
           </Link>
-          <Link href="/fluid_demo" legacyBehavior>
+          <Link href="/edge_serverless_demo" legacyBehavior>
             <a className={styles.link}>Edge vs Serverless</a>
           </Link>
         </nav>
