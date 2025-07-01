@@ -33,13 +33,13 @@ export default function Home() {
             <a className={styles.link} target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </Link>
           {/* Updated Resume Link with Error Handling */}
-          <Link href="/Raphael_Sirvent_Resume.pdf" legacyBehavior>
+          <Link href="/2025_Raphael_Sirvent_Resume_Sr_TAM_FINAL.pdf" legacyBehavior>
             <a 
               className={styles.link} 
               target="_blank" 
               rel="noopener noreferrer"
               onClick={(e) => {
-                fetch("/Raphael_Sirvent_Resume.pdf")
+                fetch("/2025_Raphael_Sirvent_Resume_Sr_TAM_FINAL.pdf")
                   .then((res) => {
                     if (!res.ok) {
                       alert("Resume file not found. Please check back later!");
