@@ -2,7 +2,6 @@
 
 This project was created to showcase key Vercel-native features in the context of a Senior CSM interview. It demonstrates how customers leverage Next.js and Vercel to solve performance, deployment, and security challenges.
 
----
 
 ## 🔧 Features Demonstrated
 
@@ -25,7 +24,6 @@ This project was created to showcase key Vercel-native features in the context o
 - Nav links cleaned up to highlight relevant routes.
 - Pages organized for clarity and interview flow.
 
----
 
 ## 🧪 How to Test
 
@@ -36,7 +34,6 @@ This project was created to showcase key Vercel-native features in the context o
   - OR: Use Vercel's geo testing for CN/KP access
 - **Static asset:** Open `/resume.pdf` in browser
 
----
 
 ## 🧠 Why This Project Matters
 
@@ -47,7 +44,6 @@ Customers deploying on Vercel care about:
 
 This demo shows how I would guide those customers post-deployment using native platform tools — no extra infrastructure required.
 
----
 
 ## 🛠 Built With
 - [Next.js](https://nextjs.org/)
