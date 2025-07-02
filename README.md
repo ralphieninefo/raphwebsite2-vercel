@@ -1,4 +1,4 @@
-# Vercel Platform Demo – Raphaël Sirvent
+# Vercel Demo – Raphaël Sirvent
 
 This project was created to showcase key Vercel-native features in the context of a Senior CSM interview. 
 
