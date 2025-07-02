@@ -1,7 +1,6 @@
 # Vercel Platform Demo – Raphaël Sirvent
 
-This project was created to showcase key Vercel-native features in the context of a Senior CSM interview. It demonstrates how customers leverage Next.js and Vercel to solve performance, deployment, and security challenges.
-
+This project was created to showcase key Vercel-native features in the context of a Senior CSM interview. 
 
 ## 🔧 Features Demonstrated
 
@@ -21,8 +20,7 @@ This project was created to showcase key Vercel-native features in the context o
 - Uses `getStaticProps` with `revalidate: 10` for background regeneration.
 
 ### 🎯 Clean Navigation
-- Nav links cleaned up to highlight relevant routes.
-- Pages organized for clarity and interview flow.
+- Nav links using Next.JS app router
 
 
 ## 🧪 How to Test
@@ -40,9 +38,8 @@ This project was created to showcase key Vercel-native features in the context o
 Customers deploying on Vercel care about:
 - Fast performance globally 🌍
 - Safe access controls 🔐
-- Scalable content delivery without rebuilds 🧱
+- Flexible content delivery without rebuilds 🧱
 
-This demo shows how I would guide those customers post-deployment using native platform tools — no extra infrastructure required.
 
 
 ## 🛠 Built With
